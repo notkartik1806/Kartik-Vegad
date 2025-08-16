@@ -531,6 +531,17 @@ body.dark-mode .moon-icon {
   box-shadow: 0 16px 48px var(--card-shadow);
 }
 
+.card-link {
+  text-decoration: none; /* remove underline */
+  color: inherit; /* keep text color */
+  display: block; /* make the link behave like a block */
+}
+
+.card-link:hover .card {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* subtle hover effect */
+  cursor: pointer;
+}
+
 .card-title {
   font-family: "Bellota Text", cursive;
   font-size: 1.4rem; /* Slightly smaller title for 4 columns */
@@ -833,4 +844,5 @@ body:not(.dark-mode) .social-icon {
 .card {
   min-height: 360px;
 }
+
 
